@@ -43,7 +43,13 @@ window.ABC_CONFIG = {
 
 <!-- Utmify: UTMs nos links de checkout -->
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
-<!-- Meta Pixel: aguardando o pixel novo do blackmix.shop -->
+<!-- Meta Pixel (1668996141505829): PageView, ViewContent e InitiateCheckout no clique de compra -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1668996141505829');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'ABC da Black Mix',content_type:'product',value:67,currency:'BRL'});
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700..900;1,700..900&amp;family=Figtree:wght@400..800&amp;family=Montserrat:wght@800;900&amp;display=swap" rel="stylesheet">
@@ -336,6 +342,7 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 </style>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1668996141505829&amp;ev=PageView&amp;noscript=1"></noscript>
 <div style="background: #1C0708; color: #FFF3EA; font-family: 'Figtree', system-ui, sans-serif; font-size: 17px; line-height: 1.55; overflow-x: clip">
 
 <!-- progresso de leitura -->

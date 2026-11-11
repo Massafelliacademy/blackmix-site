@@ -110,7 +110,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid #FFCB5C;outline-offset:4
 .ap-h1-a{display:block;font-family:'Montserrat','Figtree',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(34px,4.6vw,66px);line-height:.98;letter-spacing:-.015em;color:#FFFFFF}
 .ap-w{display:inline-block;animation:apSlam .6s cubic-bezier(.2,.9,.3,1.25) both}
 .ap-w.w1{animation-delay:.7s}.ap-w.w2{animation-delay:.86s}.ap-w.w3{animation-delay:1.02s}.ap-w.w4{animation-delay:1.18s}.ap-w.w5{animation-delay:1.32s}
-.ap-h1-pop{position:relative;overflow:hidden;display:inline-block;margin:8px 0;padding:4px 22px 10px;background:#FFB41D;color:#1C0708;font-family:'Montserrat','Figtree',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(46px,6.5vw,100px);line-height:.95;letter-spacing:-.03em;border-radius:16px;white-space:nowrap;text-shadow:none;transform:rotate(-2deg);box-shadow:0 18px 40px -14px rgba(0,0,0,.7);animation:apCarimbo .8s cubic-bezier(.3,1.5,.5,1) 1.45s both,apBrilhoPop 3s ease-in-out 2.6s infinite}
+.ap-h1-pop{position:relative;overflow:hidden;display:inline-block;margin:8px 0 16px;padding:4px 22px 10px;background:#FFB41D;color:#1C0708;font-family:'Montserrat','Figtree',sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(46px,6.5vw,100px);line-height:.95;letter-spacing:-.03em;border-radius:16px;white-space:nowrap;text-shadow:none;transform:rotate(-2deg);box-shadow:0 8px 0 #B87400,0 24px 40px -12px rgba(0,0,0,.7),0 0 0 0 rgba(255,180,29,0);animation:apCarimbo .8s cubic-bezier(.3,1.5,.5,1) 1.45s both,apBrilhoPop 3s ease-in-out 2.6s infinite}
 .ap-h1-pop::after{content:"";position:absolute;top:0;left:0;width:28%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.65),transparent);transform:translateX(-160%) skewX(-20deg);animation:apShine 3.4s ease-in-out 2.6s infinite}
 .ap-h1-b{position:relative;display:inline-block;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:900;font-size:clamp(28px,3.2vw,46px);line-height:1.1;color:#FFCB5C;background:linear-gradient(100deg,#FFCB5C 35%,#FFF4D6 50%,#FFCB5C 65%);background-size:250% 100%;background-position:150% 0;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 4px 18px rgba(30,0,0,.6));clip-path:inset(-20% 100% -45% -4%);animation:apWipe .9s cubic-bezier(.6,0,.2,1) 2.1s forwards,apTextLuz 4s ease-in-out 3.2s infinite}
 .ap-h1-b::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:4px;border-radius:2px;background:#FFB41D;transform:scaleX(0);transform-origin:0 50%;animation:apSub .6s ease 2.9s forwards}
@@ -206,7 +206,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid #FFCB5C;outline-offset:4
 .ap-play{animation:apPulse 2.4s ease-out infinite}
 .ap-comprar{letter-spacing:.03em;animation:apPisca 1.2s ease-in-out infinite}
 .ap-comprar:hover{animation-play-state:paused}
-@keyframes apPisca{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 0 0 0 rgba(255,180,29,.8)}50%{transform:scale(1.05);filter:brightness(1.25) saturate(1.1);box-shadow:0 0 0 6px rgba(255,180,29,.45)}80%{box-shadow:0 0 0 16px rgba(255,180,29,0)}}
+@keyframes apPisca{0%,100%{transform:scale(1);filter:brightness(1);box-shadow:0 5px 0 var(--bz,#B87400),0 0 0 0 rgba(255,180,29,.8)}50%{transform:scale(1.05);filter:brightness(1.25) saturate(1.1);box-shadow:0 5px 0 var(--bz,#B87400),0 0 0 6px rgba(255,180,29,.45)}80%{box-shadow:0 5px 0 var(--bz,#B87400),0 0 0 16px rgba(255,180,29,0)}}
 .ap-strike{position:relative;display:inline-block}
 .ap-strike::after{content:"";position:absolute;left:-6px;right:-6px;top:54%;height:4px;border-radius:2px;background:#C2171F;transform-origin:0 50%;transform:rotate(-7deg)}
 .ap-strike2{position:relative;display:inline-block}
@@ -230,7 +230,7 @@ details[open] .ap-ans{animation:apFade .35s ease both}
 @keyframes apKen{from{transform:scale(1.02)}to{transform:scale(1.1) translateX(1.5%)}}
 @keyframes apLuz{55%,100%{transform:translateX(100%)}}
 @keyframes apCarimbo{from{opacity:0;transform:rotate(-14deg) scale(1.7)}to{opacity:1;transform:rotate(-2deg) scale(1)}}
-@keyframes apBrilhoPop{0%,100%{box-shadow:0 18px 40px -14px rgba(0,0,0,.7),0 0 0 0 rgba(255,180,29,0)}50%{box-shadow:0 18px 40px -14px rgba(0,0,0,.7),0 0 38px 8px rgba(255,180,29,.55)}}
+@keyframes apBrilhoPop{0%,100%{box-shadow:0 8px 0 #B87400,0 24px 40px -12px rgba(0,0,0,.7),0 0 0 0 rgba(255,180,29,0)}50%{box-shadow:0 8px 0 #B87400,0 24px 40px -12px rgba(0,0,0,.7),0 0 38px 8px rgba(255,180,29,.55)}}
 @keyframes apMega{from{opacity:0;transform:rotate(-20deg) scale(2.2)}to{opacity:1;transform:rotate(-4deg) scale(1)}}
 @keyframes apPulso{0%,100%{transform:rotate(-4deg) scale(1)}50%{transform:rotate(-4deg) scale(1.07)}}
 @keyframes apConfete{from{transform:translateY(-30px) rotate(0)}to{transform:translateY(760px) rotate(620deg)}}
@@ -276,7 +276,7 @@ details[open] .ap-ans{animation:apFade .35s ease both}
 @keyframes apStamp{from{opacity:0;transform:rotate(-40deg) scale(.3)}to{opacity:1;transform:rotate(-8deg) scale(1)}}
 @supports (animation-timeline: view()){
 .ap-prog{animation:apProg linear both;animation-timeline:scroll(root)}
-.ap-mods>article{animation:apRise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+.ap-mods>article{animation:apDeal linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
 .ap-mods>article:nth-child(4n+2){animation-range:entry 5% entry 60%}
 .ap-mods>article:nth-child(4n+3){animation-range:entry 10% entry 65%}
 .ap-mods>article:nth-child(4n){animation-range:entry 15% entry 70%}
@@ -338,13 +338,88 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 }
 @media (max-width:900px){.ap-area-in{grid-template-columns:minmax(0,1fr);gap:40px}.ap-area-txt{align-items:center;text-align:center}.ap-area-txt ul{align-items:flex-start;text-align:left}.ap-maq-sol{width:220px;right:-70px;top:24px}}
 @media (max-width:640px){.ap-mods{gap:16px 14px}.ap-mods>article{flex-basis:calc((100% - 14px) / 2)}.ap-chip{font-size:12px;padding:8px 12px}.ap-chip.c2{right:-4px}}
-@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}.ap-h1-b{clip-path:none}.ap-h1-b::after{transform:none}.ap-cox-grid i,.ap-carimbo,.ap-pct-in{opacity:1}.ap-pct-in{transform:none}.ap-cine,.ap-blackout{display:none}}
+/* ===================== 3D (ligado pelo set3d; some com "reduzir movimento") ===================== */
+.ap-3d-on .ap-hero-foto{transform:perspective(1200px) rotateY(calc(var(--mx,0) * 6deg)) rotateX(calc(var(--my,0) * -4deg));transform-style:preserve-3d;transition:transform .35s ease-out}
+.ap-3d-on .ap-hero-foto .ap-fx{transform:translate(-50%,-50%) translateZ(-150px) scale(1.14)}
+.ap-3d-on .ap-hero-foto .ap-fog{transform:translateZ(70px)}
+.ap-3d-on.ap-auto .ap-hero-foto{animation:apCena 8s ease-in-out infinite alternate}
+.ap-3d-on .ap-pop-wrap{transform:perspective(700px) rotateY(calc(var(--mx,0) * 12deg)) rotateX(calc(var(--my,0) * -9deg));transition:transform .35s ease-out}
+.ap-3d-on.ap-auto .ap-pop-wrap{animation:apTarja 6s ease-in-out 3s infinite alternate}
+@keyframes apCena{from{transform:perspective(1200px) rotateY(-7deg) rotateX(2deg)}to{transform:perspective(1200px) rotateY(7deg) rotateX(-2deg)}}
+@keyframes apTarja{from{transform:perspective(700px) rotateY(-13deg)}to{transform:perspective(700px) rotateY(13deg)}}
+.ap-comprar{--bz:#B87400;box-shadow:0 5px 0 var(--bz),0 0 0 0 rgba(255,180,29,.8)}
+.ap-comprar-v{--bz:#6A070C}
+.ap-comprar:active{animation:none;transform:translateY(4px);box-shadow:0 1px 0 var(--bz),0 0 0 0 rgba(255,180,29,0) !important}
+.ap-3d-on .ap-mods{perspective:1500px}
+.ap-3d-on .ap-cover{box-shadow:0 0 0 1px rgba(255,180,29,.3),0 2px 0 1px #7A5410,0 4px 0 1px #5E400C,0 6px 0 1px #3E2A08,0 30px 44px -18px rgba(0,0,0,.85)}
+@media (hover:hover){.ap-3d-on .ap-mods article.ap-tilt:hover .ap-cover{transform:perspective(900px) rotateY(calc(var(--tx,0) * 16deg)) rotateX(calc(var(--ty,0) * -13deg)) translateZ(30px) scale(1.03);transition:transform .12s ease-out,box-shadow .35s ease;box-shadow:0 0 0 2px #FFB41D,0 2px 0 2px #7A5410,0 4px 0 2px #5E400C,0 6px 0 2px #3E2A08,0 44px 60px -20px rgba(0,0,0,.9)}}
+@media (hover:none){.ap-3d-on .ap-mods .ap-cover{transform:perspective(800px) rotateX(calc((.5 - var(--p,.5)) * 30deg));transition:none}}
+@keyframes apDeal{from{opacity:0;transform:translateY(70px) rotateX(40deg) rotateY(-22deg) scale(.84)}to{opacity:1;transform:none}}
+.ap-3d-on .ap-vbox{transform:perspective(1400px) rotateX(calc(max(0, .34 - var(--p,.34)) * 80deg)) scale(calc(1 - max(0, .34 - var(--p,.34)) * .3));transform-origin:50% 100%;will-change:transform}
+.ap-3d-on .ap-area-tela{perspective:1300px}
+.ap-3d-on .ap-cel{animation:apCelY 7s ease-in-out infinite;transform:rotateY(calc((.5 - var(--p,.5)) * 64deg)) rotateX(calc((var(--p,.5) - .5) * 14deg + 3deg)) rotateZ(-2deg);transform-style:preserve-3d;will-change:transform}
+.ap-3d-on .ap-cel::before,.ap-3d-on .ap-cel::after{content:"";position:absolute;inset:0;border-radius:46px;background:linear-gradient(160deg,#232327,#060607);box-shadow:0 0 0 2px #2E2E33;transform:translateZ(-7px)}
+.ap-3d-on .ap-cel::after{background:linear-gradient(160deg,#17171A,#000);box-shadow:0 0 0 2px #25252A,0 0 0 5px rgba(255,180,29,.28);transform:translateZ(-14px)}
+.ap-cel-luz{display:none}
+.ap-3d-on .ap-cel-luz{display:block;position:absolute;inset:11px;border-radius:36px;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,0) 32%,rgba(255,255,255,.2) 48%,rgba(255,255,255,0) 62%) no-repeat;background-size:260% 100%;background-position:calc(var(--p,.5) * 100%) 0;transform:translateZ(1px)}
+@keyframes apCelY{0%,100%{translate:0 0;rotate:y -9deg}50%{translate:0 -14px;rotate:y 9deg}}
+.ap-3d-on .ap-chip{translate:0 calc((.5 - var(--p,.5)) * 90px)}
+.ap-3d-on .ap-pct{animation-name:apFlutua3d}
+@keyframes apFlutua3d{0%,100%{transform:perspective(700px) translateY(0) rotate(var(--r)) rotateY(-26deg)}50%{transform:perspective(700px) translateY(-22px) rotate(calc(var(--r) + 9deg)) rotateY(26deg)}}
+.ap-3d-on .ap-cento{perspective:1200px}
+.ap-3d-on .ap-bandeja{transform:rotateX(calc(max(0, .5 - var(--p,.5)) * 110deg)) rotateZ(calc(max(0, .5 - var(--p,.5)) * -14deg));transform-origin:50% 100%;box-shadow:inset 0 0 0 2px rgba(255,180,29,.38),0 4px 0 #1A0507,0 8px 0 #120304,0 40px 60px -26px rgba(0,0,0,.9);will-change:transform}
+.ap-3d-on .ap-preco-card{transform:perspective(1100px) rotateY(calc(var(--tx,0) * 8deg + (.5 - var(--p,.5)) * 16deg)) rotateX(calc(var(--ty,0) * -6deg));transform-style:preserve-3d;transition:transform .15s ease-out;box-shadow:0 0 0 2px #FFB41D,0 3px 0 2px #D99A12,0 6px 0 2px #B87400,0 9px 0 2px #8F5A00,0 40px 80px -24px rgba(255,97,60,.6) !important}
+.ap-3d-on .ap-preco-card>*{translate:0 0 26px}
+.ap-3d-on .ap-preco-card>.ap-preco-num{translate:0 0 70px;text-shadow:0 1px 0 #A3121A,0 2px 0 #92101A,0 3px 0 #7A0910,0 4px 0 #6A070C,0 12px 22px rgba(106,7,12,.35)}
+/* ===== 3D v2 (11/11): anel de módulos, holograma da máquina, capas flutuando na capa, moeda de duas faces, brilho que segue o mouse ===== */
+.ap-ring3d{--w:clamp(118px,18vw,250px);--R:calc(var(--w)*1.62);position:relative;height:calc(var(--w)*2.3);margin:0 -24px;overflow:hidden;perspective:1100px;perspective-origin:50% 34%;-webkit-mask:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);mask:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
+.ap-ring3d-eixo{position:absolute;left:50%;top:47%;width:0;height:0;transform-style:preserve-3d;transform:translateZ(calc(var(--R)*-1)) rotateX(-7deg)}
+.ap-ring3d-gira{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;animation:apRing3d 40s linear infinite}
+.ap-ring3d:hover .ap-ring3d-gira{animation-play-state:paused}
+.ap-ring3d img{position:absolute;left:calc(var(--w)/-2);top:calc(var(--w)*-.79);width:var(--w);aspect-ratio:410/651;object-fit:cover;border-radius:14px;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:rotateY(calc(var(--i)*40deg)) translateZ(var(--R));box-shadow:0 0 0 2px rgba(255,180,29,.8),0 26px 40px -18px rgba(0,0,0,.95)}
+.ap-ring3d-chao{position:absolute;left:50%;bottom:2%;width:min(70%,560px);height:13%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(255,130,40,.5),rgba(255,70,30,.16) 50%,rgba(0,0,0,0) 72%);filter:blur(6px)}
+@keyframes apRing3d{to{transform:rotateY(-360deg)}}
+.ap-dores-topo{display:flex;align-items:center;justify-content:space-between;gap:24px 48px}
+.ap-holo{position:relative;flex:none;width:min(270px,58vw);aspect-ratio:624/1040;perspective:900px}
+.ap-holo-gira{position:absolute;left:0;right:0;top:0;bottom:11%;transform-style:preserve-3d;animation:apHolo 8s ease-in-out infinite alternate}
+.ap-holo-gira i{position:absolute;inset:0;-webkit-mask:url(assets/img/desenho-black-mix.webp) center/contain no-repeat;mask:url(assets/img/desenho-black-mix.webp) center/contain no-repeat;background:#FFB41D;opacity:.2;transform:translateZ(calc(var(--k)*10px))}
+.ap-holo-gira i.f{background:linear-gradient(180deg,#FFFFFF,#FFE08A 40%,#FFB41D);opacity:1;filter:drop-shadow(0 0 10px rgba(255,170,60,.9))}
+.ap-holo-gira .ap-maq-scan{opacity:1;transform:translateZ(31px)}
+.ap-holo-luz{position:absolute;left:6%;right:6%;top:4%;bottom:7%;background:linear-gradient(0deg,rgba(255,190,90,.34),rgba(255,190,90,0) 88%);clip-path:polygon(34% 100%,66% 100%,100% 0,0 0);filter:blur(10px);animation:apBreath 3.2s ease-in-out infinite}
+.ap-holo-base{position:absolute;left:8%;right:8%;bottom:0;height:13%;border-radius:50%;border:2px solid rgba(255,214,140,.9);background:radial-gradient(ellipse,rgba(255,180,29,.5),rgba(255,120,40,.12) 60%,rgba(0,0,0,0) 72%);box-shadow:0 0 34px rgba(255,150,60,.8),inset 0 0 26px rgba(255,150,60,.6)}
+.ap-holo-base::before,.ap-holo-base::after{content:"";position:absolute;inset:-2px;border-radius:50%;border:2px solid rgba(255,214,140,.7);opacity:0;animation:apRipple 3.4s ease-out infinite}
+.ap-holo-base::after{animation-delay:1.7s}
+@keyframes apHolo{from{transform:rotateY(-46deg) rotateX(5deg)}to{transform:rotateY(46deg) rotateX(-3deg)}}
+@media (max-width:900px){.ap-dores-topo{flex-direction:column;align-items:flex-start}.ap-holo{align-self:center;width:min(230px,56vw)}}
+.ap-c3d{position:absolute;z-index:0;width:23%;max-width:150px;aspect-ratio:410/651;border-radius:14px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,180,29,.75),0 30px 50px -18px rgba(0,0,0,.9),0 0 46px rgba(255,120,40,.35);opacity:0}
+.ap-c3d img{display:block;width:100%;height:100%;object-fit:cover}
+.ap-c3d::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.34),rgba(255,255,255,0) 38%,rgba(0,0,0,.28))}
+.ap-c3d.c1{left:-2%;top:3%;animation:apFadeIn .8s ease 1.5s both,apC3dA 8s ease-in-out 1.5s infinite}
+.ap-c3d.c2{right:-3%;top:0;animation:apFadeIn .8s ease 1.8s both,apC3dB 9s ease-in-out 1.8s infinite}
+@keyframes apC3dA{0%,100%{transform:perspective(760px) translateZ(40px) rotateY(34deg) rotateZ(-7deg) translateY(0)}50%{transform:perspective(760px) translateZ(40px) rotateY(18deg) rotateZ(-4deg) translateY(-16px)}}
+@keyframes apC3dB{0%,100%{transform:perspective(760px) translateZ(40px) rotateY(-34deg) rotateZ(6deg) translateY(0)}50%{transform:perspective(760px) translateZ(40px) rotateY(-17deg) rotateZ(3deg) translateY(-18px)}}
+@media (max-width:900px){.ap-c3d{width:19%}.ap-c3d.c1{left:1%;top:15%}.ap-c3d.c2{right:1%;top:20%}}
+.ap-cover::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(circle at calc(50% + var(--tx,0) * 50%) calc(50% + var(--ty,0) * 50%),rgba(255,255,255,.42),rgba(255,255,255,0) 46%);opacity:0;transition:opacity .3s ease}
+@media (hover:hover){.ap-3d-on .ap-mods article.ap-tilt:hover .ap-cover::before{opacity:1}}
+.ap-3d-on .ap-preco-card::after{content:"";position:absolute;inset:0;border-radius:30px;pointer-events:none;background:radial-gradient(circle at calc(50% + var(--tx,0) * 50%) calc(50% + var(--ty,0) * 50%),rgba(255,255,255,.6),rgba(255,255,255,0) 46%);opacity:0;transition:opacity .3s ease;translate:0 0 1px}
+@media (hover:hover){.ap-3d-on .ap-preco-card:hover::after{opacity:1}}
+@keyframes apSwayY{0%,100%{rotate:y -6deg}50%{rotate:y 6deg}}
+@media (hover:none){.ap-3d-on .ap-preco-card{animation:apSwayY 7s ease-in-out infinite}}
+.ap-3d-on.ap-vitrine .ap-preco-card{animation:apSwayY 7s ease-in-out infinite}
+.ap-3d-on.ap-vitrine .ap-mods .ap-cover{transform:perspective(800px) rotateX(calc((.5 - var(--p,.5)) * 30deg)) rotateY(calc((.5 - var(--p,.5)) * -26deg));transition:none}
+.ap-moeda{flex:none;width:96px;height:96px;perspective:600px}
+.ap-moeda-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:apMoeda 7s cubic-bezier(.6,0,.3,1) infinite}
+.ap-moeda-f{position:absolute;inset:0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;-webkit-backface-visibility:hidden;backface-visibility:hidden;background:radial-gradient(circle at 32% 28%,#FFEFB8,#FFB41D 46%,#B36A00);color:#3A1400;box-shadow:inset 0 0 0 4px rgba(255,255,255,.4),inset 0 0 0 7px rgba(138,70,0,.35),0 14px 26px -10px rgba(0,0,0,.85)}
+.ap-moeda-v{transform:rotateY(180deg)}
+@keyframes apMoeda{0%,38%{transform:rotateY(0)}50%,88%{transform:rotateY(180deg)}100%{transform:rotateY(360deg)}}
+.ap-3d-on .ap-polaroid{transform:perspective(700px) rotate(4deg) rotateY(calc((.5 - var(--p,.5)) * 50deg)) translateZ(20px) !important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}.ap-h1-b{clip-path:none}.ap-h1-b::after{transform:none}.ap-cox-grid i,.ap-carimbo,.ap-pct-in,.ap-c3d{opacity:1}.ap-pct-in{transform:none}.ap-cine,.ap-blackout{display:none}}
 :where(img[width][height]){height:auto}.dc-if{display:contents}.dc-if[hidden]{display:none !important}html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1668996141505829&amp;ev=PageView&amp;noscript=1"></noscript>
-<div style="background: #1C0708; color: #FFF3EA; font-family: 'Figtree', system-ui, sans-serif; font-size: 17px; line-height: 1.55; overflow-x: clip">
+<div data-ref="set3d" style="background: #1C0708; color: #FFF3EA; font-family: 'Figtree', system-ui, sans-serif; font-size: 17px; line-height: 1.55; overflow-x: clip">
 
 <!-- progresso de leitura -->
 <div aria-hidden="true" style="position: sticky; top: 0; z-index: 30; height: 3px; margin-bottom: -3px">
@@ -377,11 +452,11 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <h1 class="ap-h1">
 <span class="ap-h1-a"><span class="ap-w w1">Não</span> <span class="ap-w w2">sabe</span> <span class="ap-w w3">mexer</span></span>
 <span class="ap-h1-a"><span class="ap-w w4">na</span> <span class="ap-w w5">sua</span></span>
-<span class="ap-pop-wrap"><span class="ap-flare" aria-hidden="true"></span><span class="ap-h1-pop">Black Mix?</span></span>
+<span class="ap-pop-wrap ap-cena"><span class="ap-flare" aria-hidden="true"></span><span class="ap-h1-pop">Black Mix?</span></span>
 <span class="ap-h1-b">Eu tenho a solução pra você.</span>
 </h1>
 </div>
-<div class="ap-hero-foto">
+<div class="ap-hero-foto ap-cena">
 <div class="ap-fx" aria-hidden="true">
 <div class="ap-glow"></div>
 <div class="ap-disc"></div>
@@ -390,6 +465,8 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <div class="ap-ripple"></div>
 <div class="ap-ripple d2"></div>
 </div>
+<div class="ap-c3d c1" aria-hidden="true"><img width="410" height="651" src="assets/img/modulos/bicos-e-mandibulas.webp" alt="" loading="lazy" decoding="async"></div>
+<div class="ap-c3d c2" aria-hidden="true"><img width="410" height="651" src="assets/img/modulos/recheios-e-modelagem.webp" alt="" loading="lazy" decoding="async"></div>
 <div class="ap-wan"><img width="1200" height="988" src="assets/img/wanessa-capa.webp" alt="Wanessa Massafelli sorrindo atrás de uma bancada cheia de salgados, ao lado da modeladora Compacta Black Mix"></div>
 <div class="ap-fog" aria-hidden="true"><i></i><i></i><i></i></div>
 </div>
@@ -457,7 +534,7 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <section style="padding: 72px 0 96px">
 <div class="ap-wrap" style="display: flex; flex-direction: column; align-items: center; gap: 30px; text-align: center">
 <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(34px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.015em; max-width: 16em">Assista: a Wan apresenta o ABC da Black Mix</h2>
-<div class="ap-vbox" data-ref="setVidBox" data-on-click="toqueSom">
+<div class="ap-vbox ap-p" data-ref="setVidBox" data-on-click="toqueSom">
 <video data-ref="setVideo" src="assets/video/apresentacao-abc-da-black-mix.mp4" poster="assets/img/capa-video.jpg" playsinline="" preload="metadata" data-on-ended="fimVideo" aria-label="Vídeo de apresentação do ABC da Black Mix com a Wanessa Massafelli"></video>
 <div class="dc-if" data-if="capaVideo" hidden>
 <button type="button" class="ap-vid" data-on-click="tocarComSom" aria-label="Assistir à apresentação do ABC da Black Mix, 1 minuto e 30 segundos" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: none; background: transparent; color: #FFF3EA; font-family: inherit; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: flex-end">
@@ -486,11 +563,13 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 
 <!-- SOLUÇÕES PRA QUEM TEM A BLACK MIX -->
 <section style="position: relative; overflow: hidden; background: #2B0A0B; padding: 96px 0">
-<div class="ap-maq ap-maq-sol" aria-hidden="true"><img width="624" height="900" src="assets/img/desenho-black-mix.webp" alt="" loading="lazy" decoding="async"><div class="ap-maq-scan"></div></div>
 <div class="ap-wrap" style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 44px">
+<div class="ap-dores-topo">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
 <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(34px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.015em">Tem uma Black Mix e passa por isso?</h2>
 <p style="margin: 0; color: #F2DCD0">Cada problema abaixo tem aula no ABC da Black Mix.</p>
+</div>
+<div class="ap-holo" aria-hidden="true"><div class="ap-holo-luz"></div><div class="ap-holo-gira"><i style="--k: -3"></i><i style="--k: -2"></i><i style="--k: -1"></i><i style="--k: 0"></i><i style="--k: 1"></i><i style="--k: 2"></i><i class="f" style="--k: 3"></i><div class="ap-maq-scan"></div></div><div class="ap-holo-base"></div></div>
 </div>
 <div style="display: flex; flex-direction: column">
 <div class="ap-rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px 48px; padding: 26px 0; border-top: 1px solid #561818">
@@ -528,57 +607,68 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(34px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.015em">8 módulos, 13 aulas: da caixa à venda</h2>
 <p style="margin: 0; color: #F2DCD0">São mais de 2h30 de aula com a Wanessa, na ordem certa pra sua Black Mix sair produzindo.</p>
 </div>
+<div class="ap-ring3d" aria-hidden="true"><div class="ap-ring3d-eixo"><div class="ap-ring3d-gira">
+<img width="410" height="651" src="assets/img/modulos/comece-aqui.webp" alt="" loading="lazy" style="--i: 0">
+<img width="410" height="651" src="assets/img/modulos/bicos-e-mandibulas.webp" alt="" loading="lazy" style="--i: 1">
+<img width="410" height="651" src="assets/img/modulos/massas.webp" alt="" loading="lazy" style="--i: 2">
+<img width="410" height="651" src="assets/img/modulos/recheios-e-modelagem.webp" alt="" loading="lazy" style="--i: 3">
+<img width="410" height="651" src="assets/img/modulos/empanamento.webp" alt="" loading="lazy" style="--i: 4">
+<img width="410" height="651" src="assets/img/modulos/congelamento-e-armazenamento.webp" alt="" loading="lazy" style="--i: 5">
+<img width="410" height="651" src="assets/img/modulos/fritura.webp" alt="" loading="lazy" style="--i: 6">
+<img width="523" height="784" src="assets/img/modulos/churros.webp" alt="" loading="lazy" style="--i: 7">
+<img width="410" height="651" src="assets/img/modulos/encerramento.webp" alt="" loading="lazy" style="--i: 8">
+</div></div><div class="ap-ring3d-chao"></div></div>
 <div class="ap-mods">
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/comece-aqui.webp" alt="Capa do módulo Comece aqui, com a Wanessa de braços cruzados" loading="lazy" decoding="async"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 1 · 1 aula · 2 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">A Wan apresenta a Black Mix e o caminho até a sua primeira produção.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/bicos-e-mandibulas.webp" alt="Capa do módulo Bicos e mandíbulas, com a Wanessa ao lado da Black Mix" loading="lazy" decoding="async"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 2 · 1 aula · 7 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">O que é parede de massa, o que é bico de recheio e como combinar os dois na Black Mix.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/massas.webp" alt="Capa do módulo Massas, com a Wanessa e a masseira Compacta Black" loading="lazy" decoding="async"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 3 · 2 aulas · 20 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">Os insumos e o preparo da massa base e coringa, que faz cinco tipos de salgados.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/recheios-e-modelagem.webp" alt="Capa do módulo Recheios e modelagem, com a Wanessa, a Black Mix e uma bandeja de bolinhas" loading="lazy" decoding="async"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 4 · 5 aulas · 1h39</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">Coxinha, bolinha, risole, enroladinho e quibe, com o ponto certo do recheio.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/empanamento.webp" alt="Capa do módulo Empanamento, com duas coxinhas empanadas na mão" loading="lazy"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 5 · 1 aula · 8 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">Como empanar os salgados que saem da sua Black Mix.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/congelamento-e-armazenamento.webp" alt="Capa do módulo Congelamento e armazenamento, com pacotes de salgados congelados" loading="lazy"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 6 · 1 aula · 4 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">Como congelar e armazenar a sua produção do jeito certo.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/fritura.webp" alt="Capa do módulo Fritura, com uma fritadeira cheia de bolinhas" loading="lazy"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 7 · 1 aula · 14 min</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">A fritura correta, pra seus salgados ficarem lindos e crocantes.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="523" height="784" src="assets/img/modulos/churros.webp" alt="Capa Churros, com a Wanessa segurando uma lata de doce de leite e churros na frente" loading="lazy"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Doces na Black Mix</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">Churros feitos na modeladora, com doce de leite.</p>
 </article>
 
-<article style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<article class="ap-tilt ap-p" style="display: flex; flex-direction: column; gap: 12px; min-width: 0">
 <div class="ap-cover"><img width="410" height="651" src="assets/img/modulos/encerramento.webp" alt="Capa do módulo Encerramento do curso, com a Wanessa sorrindo na cozinha" loading="lazy"></div>
 <span style="font-size: 13px; font-weight: 800; letter-spacing: 0.02em; color: #FFCB5C">Módulo 8 · 1 aula</span>
 <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #F2DCD0">O fechamento com a Wan: como vender e se posicionar no ramo de salgados.</p>
@@ -631,12 +721,13 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <div class="ap-ripple d2"></div>
 </div>
 <div class="ap-maq ap-maq-area" aria-hidden="true"><img width="624" height="900" src="assets/img/desenho-black-mix.webp" alt="" loading="lazy" decoding="async"><div class="ap-maq-scan"></div></div>
-<figure class="ap-cel">
+<figure class="ap-cel ap-p">
 <video data-ref="setTela" src="assets/video/area-de-membros-black-mix.mp4" poster="assets/img/capa-area-de-membros.jpg" playsinline="" preload="metadata" aria-label="Gravação da tela do celular navegando pela área de membros do ABC da Black Mix: capas dos módulos e lista de aulas"></video>
+<i class="ap-cel-luz" aria-hidden="true"></i>
 </figure>
-<span class="ap-chip c1" aria-hidden="true">8 módulos</span>
-<span class="ap-chip c2" aria-hidden="true">13 aulas</span>
-<span class="ap-chip c3" aria-hidden="true">Acesso na hora</span>
+<span class="ap-chip c1 ap-p" aria-hidden="true">8 módulos</span>
+<span class="ap-chip c2 ap-p" aria-hidden="true">13 aulas</span>
+<span class="ap-chip c3 ap-p" aria-hidden="true">Acesso na hora</span>
 <span style="position: relative; z-index: 2; font-size: 14px; color: #E0C2B4">Gravação real da área de membros, no celular</span>
 </div>
 </div>
@@ -715,7 +806,7 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <p class="ap-bf-sub" style="position: relative; z-index: 2">Oferta especial do ABC da Black Mix pra quem tem a modeladora Compacta Black Mix.</p>
 </div>
 <div class="ap-cento" data-bf="">
-<div class="ap-bandeja" role="img" aria-label="Uma bandeja com 100 coxinhas: um cento de salgados">
+<div class="ap-bandeja ap-p" role="img" aria-label="Uma bandeja com 100 coxinhas: um cento de salgados">
 <div class="ap-cox-grid" aria-hidden="true"><i style="--i: 0"></i><i style="--i: 1"></i><i style="--i: 2"></i><i style="--i: 3"></i><i style="--i: 4"></i><i style="--i: 5"></i><i style="--i: 6"></i><i style="--i: 7"></i><i style="--i: 8"></i><i style="--i: 9"></i><i style="--i: 10"></i><i style="--i: 11"></i><i style="--i: 12"></i><i style="--i: 13"></i><i style="--i: 14"></i><i style="--i: 15"></i><i style="--i: 16"></i><i style="--i: 17"></i><i style="--i: 18"></i><i style="--i: 19"></i><i style="--i: 20"></i><i style="--i: 21"></i><i style="--i: 22"></i><i style="--i: 23"></i><i style="--i: 24"></i><i style="--i: 25"></i><i style="--i: 26"></i><i style="--i: 27"></i><i style="--i: 28"></i><i style="--i: 29"></i><i style="--i: 30"></i><i style="--i: 31"></i><i style="--i: 32"></i><i style="--i: 33"></i><i style="--i: 34"></i><i style="--i: 35"></i><i style="--i: 36"></i><i style="--i: 37"></i><i style="--i: 38"></i><i style="--i: 39"></i><i style="--i: 40"></i><i style="--i: 41"></i><i style="--i: 42"></i><i style="--i: 43"></i><i style="--i: 44"></i><i style="--i: 45"></i><i style="--i: 46"></i><i style="--i: 47"></i><i style="--i: 48"></i><i style="--i: 49"></i><i style="--i: 50"></i><i style="--i: 51"></i><i style="--i: 52"></i><i style="--i: 53"></i><i style="--i: 54"></i><i style="--i: 55"></i><i style="--i: 56"></i><i style="--i: 57"></i><i style="--i: 58"></i><i style="--i: 59"></i><i style="--i: 60"></i><i style="--i: 61"></i><i style="--i: 62"></i><i style="--i: 63"></i><i style="--i: 64"></i><i style="--i: 65"></i><i style="--i: 66"></i><i style="--i: 67"></i><i style="--i: 68"></i><i style="--i: 69"></i><i style="--i: 70"></i><i style="--i: 71"></i><i style="--i: 72"></i><i style="--i: 73"></i><i style="--i: 74"></i><i style="--i: 75"></i><i style="--i: 76"></i><i style="--i: 77"></i><i style="--i: 78"></i><i style="--i: 79"></i><i style="--i: 80"></i><i style="--i: 81"></i><i style="--i: 82"></i><i style="--i: 83"></i><i style="--i: 84"></i><i style="--i: 85"></i><i style="--i: 86"></i><i style="--i: 87"></i><i style="--i: 88"></i><i style="--i: 89"></i><i style="--i: 90"></i><i style="--i: 91"></i><i style="--i: 92"></i><i style="--i: 93"></i><i style="--i: 94"></i><i style="--i: 95"></i><i style="--i: 96"></i><i style="--i: 97"></i><i style="--i: 98"></i><i style="--i: 99"></i></div>
 <span class="ap-bandeja-leg">100 salgados = 1 cento</span>
 </div>
@@ -780,14 +871,14 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 </div>
 </div>
 
-<div style="flex: 1 1 400px; max-width: 480px; min-width: 0; margin: 0 auto; background: #FFF3EA; color: #1C0708; border-radius: 30px; padding: 40px 32px 34px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; box-shadow: 0 0 0 2px #FFB41D, 0 30px 80px -30px rgba(255,97,60,0.55)">
+<div class="ap-preco-card ap-tilt ap-p" style="flex: 1 1 400px; max-width: 480px; min-width: 0; margin: 0 auto; background: #FFF3EA; color: #1C0708; border-radius: 30px; padding: 40px 32px 34px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; box-shadow: 0 0 0 2px #FFB41D, 0 30px 80px -30px rgba(255,97,60,0.55)">
 <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; background: #C2171F; color: #FFFFFF; font-size: 15px; font-weight: 800">Esquenta Black Friday · 77% off</span>
 <p style="margin: 6px 0 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 800; font-size: 34px; line-height: 1; color: #6A2E22">de <span class="ap-strike">R$ 299,99</span></p>
 <p style="margin: 6px 0 0; font-size: 17px; font-weight: 700">por</p>
-<div style="font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(72px, 9vw, 108px); line-height: 0.95; letter-spacing: -0.02em; color: #C2171F">R$ 67</div>
+<div class="ap-preco-num" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: clamp(72px, 9vw, 108px); line-height: 0.95; letter-spacing: -0.02em; color: #C2171F">R$ 67</div>
 <p style="margin: 0; font-size: 16px; color: #6A2E22">Pagamento único, sem mensalidade. Pix ou cartão.</p>
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #C2171F">Você economiza R$ 232,99</p>
-<a class="ap-btn ap-comprar" href="#preco" data-checkout="principal" data-on-click="clicouCompra" style="display: flex; align-items: center; justify-content: center; width: 100%; min-height: 64px; margin-top: 8px; padding: 0 24px; box-sizing: border-box; background: linear-gradient(90deg, #C2171F, #E72F2D); color: #FFFFFF; border-radius: 999px; font-weight: 900; font-size: 21px; text-decoration: none; box-shadow: 0 14px 30px -12px rgba(194,23,31,0.7)">COMPRAR AGORA</a>
+<a class="ap-btn ap-comprar ap-comprar-v" href="#preco" data-checkout="principal" data-on-click="clicouCompra" style="display: flex; align-items: center; justify-content: center; width: 100%; min-height: 64px; margin-top: 8px; padding: 0 24px; box-sizing: border-box; background: linear-gradient(90deg, #C2171F, #E72F2D); color: #FFFFFF; border-radius: 999px; font-weight: 900; font-size: 21px; text-decoration: none; box-shadow: 0 14px 30px -12px rgba(194,23,31,0.7)">COMPRAR AGORA</a>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin-top: 8px; font-size: 14px; color: #6A2E22">
 <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>Compra segura pela Kiwify</span>
 <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg>Garantia de 7 dias</span>
@@ -799,7 +890,7 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <!-- GARANTIA -->
 <section class="ap-wrap" style="padding-top: 72px">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px 32px; padding: 32px; border: 1px solid #561818; border-radius: 26px">
-<div style="flex: none; width: 92px; height: 92px; border-radius: 50%; border: 2px solid #FFB41D; color: #FFB41D; display: flex; flex-direction: column; align-items: center; justify-content: center"><span style="font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: 36px; line-height: 1">7</span><span style="font-size: 12px; font-weight: 700">dias</span></div>
+<div class="ap-moeda"><div class="ap-moeda-in"><div class="ap-moeda-f"><span style="font-family: 'Playfair Display', Georgia, serif; font-weight: 900; font-size: 40px; line-height: 1">7</span><span style="font-size: 13px; font-weight: 800">dias</span></div><div class="ap-moeda-f ap-moeda-v" aria-hidden="true"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#3A1400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></div></div></div>
 <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
 <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 800; font-size: 26px">Garantia incondicional de 7 dias</h3>
 <p style="margin: 0; color: #F2DCD0; max-width: 44em">Entre, assista às aulas e teste na sua Black Mix. Se não for pra você, peça o reembolso em até 7 dias e receba 100% do valor de volta, sem perguntas.</p>
@@ -813,7 +904,7 @@ section h2{animation:apRise linear both;animation-timeline:view();animation-rang
 <figure style="margin: 0; flex: 1 1 360px; max-width: 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
 <div style="position: relative; padding-bottom: 64px">
 <img width="900" height="1200" src="assets/img/wanessa-sbt.webp" alt="Wanessa Massafelli, de dólmã da Compacta Print, em frente ao painel do SBT" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 28px; box-shadow: 14px 14px 0 0 #C2171F" loading="lazy" decoding="async">
-<div class="ap-polaroid" style="position: absolute; right: -12px; bottom: 0; width: 46%; padding: 8px 8px 10px; box-sizing: border-box; background: #FFF3EA; border-radius: 14px; transform: rotate(4deg); box-shadow: 0 24px 44px -14px rgba(0,0,0,0.8)">
+<div class="ap-polaroid ap-p" style="position: absolute; right: -12px; bottom: 0; width: 46%; padding: 8px 8px 10px; box-sizing: border-box; background: #FFF3EA; border-radius: 14px; transform: rotate(4deg); box-shadow: 0 24px 44px -14px rgba(0,0,0,0.8)">
 <img width="640" height="640" src="assets/img/wanessa-bastidores-sbt.webp" alt="Wanessa Massafelli nos bastidores de uma gravação no SBT, ao lado do apresentador" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px">
 <span style="display: block; margin-top: 7px; font-size: 13px; font-weight: 800; line-height: 1.2; color: #1C0708; text-align: center">Nos bastidores do SBT</span>
 </div>
@@ -989,6 +1080,7 @@ class Component extends DCLogic {
     if (this._vobs) this._vobs.disconnect();
     if (this._bobs && this._bobs.disconnect) this._bobs.disconnect();
     if (this._tobs) this._tobs.disconnect();
+    if (this._3dOff) this._3dOff();
   }
   tentarOferta() {
     if (!(this.props.ofertaAtiva ?? false)) return;
@@ -1035,6 +1127,82 @@ class Component extends DCLogic {
     if (this._h) return this._h;
     this._h = {
       setVideo: (el) => { this._video = el; if (el) { el.muted = true; } },
+      set3d: (root) => {
+        if (!root || this._3d || typeof window === 'undefined') return;
+        this._3d = true;
+        let calmo = false, toque = false;
+        try { calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches; toque = window.matchMedia('(hover: none)').matches; } catch (e) {}
+        if (calmo) return;
+        const ps = root.getElementsByClassName('ap-p');
+        const cenas = root.getElementsByClassName('ap-cena');
+        const raf = window.requestAnimationFrame ? (f) => window.requestAnimationFrame(f) : (f) => setTimeout(f, 16);
+        const lim = (n) => (n < -1 ? -1 : n > 1 ? 1 : n);
+        let auto = true, pedido = false, mouse = null, alvo = null, gx = null, gy = null;
+        const quadro = () => {
+          pedido = false;
+          if (!root.classList.contains('ap-3d-on')) root.classList.add('ap-3d-on');
+          root.classList.toggle('ap-auto', auto);
+          const vh = window.innerHeight || 800, vw = window.innerWidth || 1200;
+          const vitrine = vh > 1800, agora = Date.now() / 1000;
+          root.classList.toggle('ap-vitrine', vitrine);
+          for (let i = 0; i < ps.length; i++) {
+            const el = ps[i];
+            const r = el.getBoundingClientRect();
+            if (!vitrine && (r.bottom < -vh || r.top > vh * 2)) continue;
+            let p = vitrine ? 0.5 + 0.4 * Math.sin(agora * 0.8 + i * 0.9) : (vh - r.top) / (vh + r.height);
+            p = (p < 0 ? 0 : p > 1 ? 1 : p).toFixed(3);
+            if (el.style.getPropertyValue('--p') !== p) el.style.setProperty('--p', p);
+          }
+          let mx = gx, my = gy;
+          if (mouse) {
+            mx = lim((mouse.x / vw) * 2 - 1); my = lim((mouse.y / vh) * 2 - 1);
+            const t = mouse.t && mouse.t.closest ? mouse.t.closest('.ap-tilt') : null;
+            if (t !== alvo) {
+              if (alvo) { alvo.style.setProperty('--tx', '0'); alvo.style.setProperty('--ty', '0'); }
+              alvo = t;
+            }
+            if (t) {
+              const r = t.getBoundingClientRect();
+              t.style.setProperty('--tx', lim(((mouse.x - r.left) / (r.width || 1)) * 2 - 1).toFixed(3));
+              t.style.setProperty('--ty', lim(((mouse.y - r.top) / (r.height || 1)) * 2 - 1).toFixed(3));
+            }
+          }
+          if (mx !== null) {
+            for (let i = 0; i < cenas.length; i++) {
+              cenas[i].style.setProperty('--mx', mx.toFixed(3));
+              cenas[i].style.setProperty('--my', my.toFixed(3));
+            }
+          }
+          if (vitrine) setTimeout(pedir, 40);
+        };
+        const pedir = () => { if (!pedido) { pedido = true; raf(quadro); } };
+        const aoMover = (e) => {
+          if (e.pointerType && e.pointerType !== 'mouse') return;
+          mouse = { x: e.clientX, y: e.clientY, t: e.target }; auto = false;
+          pedir();
+        };
+        const aoGirar = (e) => {
+          if (e.gamma == null || e.beta == null) return;
+          auto = false;
+          gx = lim(e.gamma / 22); gy = lim((e.beta - 50) / 22);
+          pedir();
+        };
+        window.addEventListener('scroll', pedir, { passive: true, capture: true });
+        window.addEventListener('resize', pedir, { passive: true });
+        window.addEventListener('load', pedir);
+        root.addEventListener('pointermove', aoMover, { passive: true });
+        const giro = toque && typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission !== 'function';
+        if (giro) window.addEventListener('deviceorientation', aoGirar, { passive: true });
+        this._3dOff = () => {
+          window.removeEventListener('scroll', pedir, { capture: true });
+          window.removeEventListener('resize', pedir);
+          window.removeEventListener('load', pedir);
+          root.removeEventListener('pointermove', aoMover);
+          if (giro) window.removeEventListener('deviceorientation', aoGirar);
+        };
+        pedir();
+        setTimeout(pedir, 600);
+      },
       setVidBox: (el) => {
         if (!el || this._vobs || typeof IntersectionObserver === 'undefined') return;
         this._vobs = new IntersectionObserver((entries) => {
